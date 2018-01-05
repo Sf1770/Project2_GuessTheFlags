@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +21,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbR-1H-vBl">
                                 <rect key="frame" x="87" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BbR-1H-vBl" secondAttribute="height" multiplier="2:1" id="NCb-QO-l8s"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQY-mA-1Wk"/>
@@ -27,6 +31,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl6-KG-aUd">
                                 <rect key="frame" x="87" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jl6-KG-aUd" secondAttribute="height" multiplier="2:1" id="NQ9-h2-n1U"/>
+                                </constraints>
                                 <state key="normal" image="italy"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjv-bp-PaH"/>
@@ -34,6 +41,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuB-oV-xIP">
                                 <rect key="frame" x="87" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cuB-oV-xIP" secondAttribute="height" multiplier="2:1" id="tEd-ln-IdO"/>
+                                </constraints>
                                 <state key="normal" image="nigeria"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnE-QF-QOz"/>
@@ -45,8 +55,11 @@
                             <constraint firstItem="Jl6-KG-aUd" firstAttribute="centerX" secondItem="BbR-1H-vBl" secondAttribute="centerX" id="9bk-DM-L1m"/>
                             <constraint firstItem="BbR-1H-vBl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="JSs-cC-kr1"/>
                             <constraint firstItem="cuB-oV-xIP" firstAttribute="top" secondItem="Jl6-KG-aUd" secondAttribute="bottom" constant="30" id="Kex-nK-LCk"/>
+                            <constraint firstItem="cuB-oV-xIP" firstAttribute="height" secondItem="Jl6-KG-aUd" secondAttribute="height" id="NqQ-Yr-Yks"/>
                             <constraint firstItem="cuB-oV-xIP" firstAttribute="centerX" secondItem="Jl6-KG-aUd" secondAttribute="centerX" id="PcB-ZE-YzY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cuB-oV-xIP" secondAttribute="bottom" constant="20" id="dX1-Wh-ann"/>
                             <constraint firstItem="Jl6-KG-aUd" firstAttribute="top" secondItem="BbR-1H-vBl" secondAttribute="bottom" constant="30" id="jeK-DF-HZb"/>
+                            <constraint firstItem="Jl6-KG-aUd" firstAttribute="height" secondItem="BbR-1H-vBl" secondAttribute="height" id="pmk-IB-CgO"/>
                             <constraint firstItem="BbR-1H-vBl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="y3P-bK-AtU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
